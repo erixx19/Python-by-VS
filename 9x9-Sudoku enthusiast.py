@@ -1,3 +1,4 @@
+
 def print_grid(grid):
     for row in grid:
         print(" ".join(str(num) if num != 0 else "." for num in row))
@@ -20,6 +21,7 @@ def is_valid(grid, row, col, num):
             
     return True
 
+
 def is_initial_grid_valid(grid):
     for row in range(9):
         for col in range(9):
@@ -32,6 +34,7 @@ def is_initial_grid_valid(grid):
                 grid[row][col] = num
 
     return True
+
 
 def solve_sudoku(grid):
     for row in range(9):
@@ -47,6 +50,7 @@ def solve_sudoku(grid):
                 return False
             
     return True
+
 
 # source : intervue.io (9x9 sudoku)
 def main():
